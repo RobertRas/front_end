@@ -1,0 +1,23 @@
+header{
+    background-color: #00ffff;
+    height: 50px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end;
+}
+
+nav{
+    background-color: black;
+}
+
+nav a {
+    color: #ffffff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 16px; /* Tamanho da fonte */
+    /*padding: 5px; /* Espaçamento interno */
+    margin-left: 15px;
+}
+
+nav a:hover {
+    color: #0088cc; /* Cor do texto quando o mouse passa por cima */
+}
