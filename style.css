@@ -1,11 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 header{
     background-color: #00ffff;
-    height: 50px;
+    height: 70px;
     display: flex; 
     flex-direction: column; 
     justify-content: flex-end;
 }
 
+header h1 {
+    color: #ffffff;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
 nav{
     background-color: black;
 }
@@ -20,4 +32,58 @@ nav a {
 
 nav a:hover {
     color: #0088cc; /* Cor do texto quando o mouse passa por cima */
+}
+
+.formata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.apresentacao {
+    background-color: #ecdc49;
+    /*display: flex;
+    justify-content: center;*/
+    width: 500px;
+    margin: auto;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+/*float*/
+.mycontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.mycontainer div {
+    width: 34%;
+    float: left;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*inline-block*/
+.inline {
+    width: 33%;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*flex*/
+.flex {
+    display: flex;
+    border-radius: 5px;
+}
+
+.Grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.Grid div{
+    border-radius: 5px;
 }
