@@ -3,6 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    /* Outros estilos, se necessário */
+}
+
+main {
+    height: 100%;
+}
 header{
     background-color: #00ffff;
     height: 70px;
@@ -18,72 +31,68 @@ header h1 {
     justify-content: center;
     margin: auto;
 }
+/*layout da navbar*/
 nav{
     background-color: black;
+    
 }
 
-nav a {
+nav .opcoes {
     color: #ffffff; /* Cor do texto */
     text-decoration: none; /* Remove o sublinhado */
     font-size: 16px; /* Tamanho da fonte */
     /*padding: 5px; /* Espaçamento interno */
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 nav a:hover {
     color: #0088cc; /* Cor do texto quando o mouse passa por cima */
 }
 
-.formata {
+/*layout das opções do navbar*/
+ul {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-
 }
 
-.apresentacao {
-    background-color: #ecdc49;
-    /*display: flex;
-    justify-content: center;*/
-    width: 500px;
-    margin: auto;
-    padding: 3px;
-    border-radius: 5px;
+.pagina {
+    height: 100%;
+    width: 100%;
 }
 
 
-/*float*/
-.mycontainer {
+/*estilização do alinha*/
+.conteudo {
+    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
 }
 
-.mycontainer div {
-    width: 34%;
-    float: left;
-    padding: 5px;
-    border-radius: 5px;
+/*estilização do content*/
+.content {
+
+    width: 70%;
+    height: 50%;
 }
 
-/*inline-block*/
-.inline {
-    width: 33%;
-    display: inline-block;
-    border-radius: 5px;
-    padding: 5px;
+/*estilização do sidebar*/
+.sidebar {
+    background-color: rgb(62, 146, 90);
+    height: 20%;
+    width: 30%;
 }
 
-/*flex*/
-.flex {
-    display: flex;
-    border-radius: 5px;
+.sidebar ul {
+    display: block;
+    list-style: none;
 }
 
-.Grid{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+ul a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    
 }
-
-.Grid div{
-    border-radius: 5px;
+/*estilização do footer*/
+.rodape {
+    background-color: blueviolet;
+    height: 30px;
 }
